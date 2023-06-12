@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All tests">
+    <test name="All tests">
+        <parameter name="firstNameMan" value="Oleksandr"/>
+        <parameter name="lastNameMan" value="Pinkovich"/>
+        <parameter name="genderMan" value="male"/>
+        <parameter name="ageMan" value="66"/>
+        <parameter name="partnerMan" value="Pravoberegna"/>
+
+        <parameter name="firstNameWoman" value="Vicrotia"/>
+        <parameter name="lastNameWoman" value="Pravoberegna"/>
+        <parameter name="genderWoman" value="woman"/>
+        <parameter name="ageWoman" value="62"/>
+        <parameter name="partnerWoman" value="Pinkovich"/>
+
+        <parameter name="expectedGetterFirstName" value="Oleksandr"/>
+        <parameter name="expectedGetterLastName" value="Pinkovich"/>
+        <parameter name="expectedGetterGender" value="male"/>
+        <parameter name="expectedGetterAge" value="66"/>
+        <parameter name="expectedGetterPartner" value="Pravoberegna"/>
+
+        <parameter name="setFirstName" value="Vicrotia"/>
+        <parameter name="setLastName" value="Pravoberegna"/>
+        <parameter name="setGender" value="woman"/>
+        <parameter name="setAge" value="62"/>
+        <parameter name="setPartner" value="Pinkovich"/>
+
+        <parameter name="expectedSetterFirstName" value="Vicrotia"/>
+        <parameter name="expectedSetterLastName" value="Pravoberegna"/>
+        <parameter name="expectedSetterGender" value="woman"/>
+        <parameter name="expectedSetterAge" value="62"/>
+        <parameter name="expectedSetterPartner" value="Pinkovich"/>
+        <classes>
+            <class name="testcases.TestPerson"/>
+        </classes>
+    </test>
+</suite>
